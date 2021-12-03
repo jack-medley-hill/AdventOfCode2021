@@ -120,7 +120,7 @@ namespace AdventOfCode
                 generatorLines = generatorLines.Where(x => x[i].ToString() == generatorMostCommon.ToString()).ToList();
                 if (generatorLines.Count == 1)
                 {
-                    generator = Convert.ToUInt64(generatorLines.Single(), 2);
+                    generator = Convert.ToInt32(generatorLines.Single(), 2);
                 }
 
                 int scrubberBit = scrubberLines.Select(x => int.Parse(x[i].ToString())).Sum();
